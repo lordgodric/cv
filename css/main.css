@@ -1,5 +1,8 @@
-h1, h2, h3, h4, h5, h6, p {
+p {
   margin-bottom: 0; }
+
+h1, h2, h4, h5, h6 {
+  margin-bottom: 5px; }
 
 a:hover {
   border-top: 3px solid #F0E48E;
@@ -21,4 +24,18 @@ a:hover {
   .l-main .avatar {
     width: 100%;
     max-width: 230px;
-    border-radius: 6px; }
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px; }
+  .l-main h5 {
+    border-bottom: 1px solid #999; }
+
+.about-me p {
+  padding-top: 5px;
+  text-align: justify; }
+
+.name {
+  font-size: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #FFF3A7;
+  margin: 0; }
