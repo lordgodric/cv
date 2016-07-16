@@ -1,7 +1,16 @@
+h1,h2,h3,h4,h5,h6,p {
+  margin-bottom: 0;
+}
+
+a:hover {
+  border-top: 3px solid #F0E48E;
+  color: #54777D !important;
+  transition: all .03s;
+}
+
 .l-nav {
     height: 22px;
     ul {
-        text-transform: uppercase;
         list-style: none;
         li {
             margin-right: 12px;
@@ -10,9 +19,19 @@
                 color: #000;
 
                 &:hover {
-                  color: #ccc;
+
                 }
             }
         }
     }
+}
+
+.l-main {
+  padding: 33px 0;
+
+  .avatar {
+    width: 100%;
+    max-width: 230px;
+    border-radius: 6px;
+  }
 }
