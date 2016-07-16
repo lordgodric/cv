@@ -1,0 +1,18 @@
+.l-nav {
+    height: 22px;
+    ul {
+        text-transform: uppercase;
+        list-style: none;
+        li {
+            margin-right: 12px;
+            a {
+                text-decoration: none;
+                color: #000;
+
+                &:hover {
+                  color: #ccc;
+                }
+            }
+        }
+    }
+}
