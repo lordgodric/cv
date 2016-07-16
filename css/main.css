@@ -1,7 +1,11 @@
 p {
   margin-bottom: 0; }
 
-h1, h2, h4, h5, h6 {
+h1,
+h2,
+h4,
+h5,
+h6 {
   margin-bottom: 5px; }
 
 a {
@@ -10,7 +14,7 @@ a {
   a:hover {
     border-top: 3px solid #000;
     color: #54777D !important;
-    transition: all .03s;
+    transition: all 0.03s;
     background-color: #FFF3A7; }
 
 .l-nav {
@@ -33,10 +37,24 @@ a {
     border-bottom-left-radius: 6px; }
   .l-main h5 {
     border-bottom: 1px solid #999; }
+  .l-main .main-wrapper {
+    display: flex; }
+    .l-main .main-wrapper .left {
+      order: 1; }
+      @media screen and (max-width: 500px) {
+        .l-main .main-wrapper .left {
+          order: 2; } }
+    .l-main .main-wrapper .right {
+      order: 2; }
+      @media screen and (max-width: 500px) {
+        .l-main .main-wrapper .right {
+          order: 1; } }
 
-.about-me p {
-  padding-top: 5px;
-  text-align: justify; }
+.about-me {
+  margin-bottom: 20px; }
+  .about-me p {
+    padding-top: 5px;
+    text-align: justify; }
 
 .name {
   font-size: 28px;

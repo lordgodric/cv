@@ -1,24 +1,24 @@
 p {
-  margin-bottom: 0;
+    margin-bottom: 0;
 }
 
-h1,h2,h4,h5,h6, {
-  margin-bottom: 5px;
+h1,
+h2,
+h4,
+h5,
+h6 {
+    margin-bottom: 5px;
 }
-
-
-
 a {
     text-decoration: none;
     color: #000;
     &:hover {
-      border-top: 3px solid #000;
-      color: #54777D !important;
-      transition: all .03s;
-      background-color: #FFF3A7;
+        border-top: 3px solid #000;
+        color: #54777D !important;
+        transition: all 0.03s;
+        background-color: #FFF3A7;
     }
 }
-
 .l-nav {
     height: 22px;
     ul {
@@ -29,45 +29,57 @@ a {
                 text-decoration: none;
                 color: #000;
                 padding: 0 5px;
-
-                &:hover {
-
-                }
-            &:hover {
-
-            }
+                &:hover {}
+                &:hover {}
             }
         }
     }
 }
-
 .l-main {
-  padding: 33px 0;
+    padding: 33px 0;
+    .avatar {
+        width: 100%;
+        max-width: 230px;
+        border-bottom-right-radius: 6px;
+        border-bottom-left-radius: 6px;
+    }
+    h5 {
+        border-bottom: 1px solid #999;
+    }
 
-  .avatar {
-    width: 100%;
-    max-width: 230px;
-    border-bottom-right-radius: 6px;
-    border-bottom-left-radius: 6px;
-  }
+    .main-wrapper {
+      display: flex;
 
-  h5 {
-    border-bottom: 1px solid #999;
-  }
+      .left {
+        order: 1;
+
+        @media screen and (max-width: 500px) {
+          order: 2;
+        }
+      }
+
+      .right {
+        order: 2;
+
+        @media screen and  (max-width: 500px) {
+          order: 1;
+        }
+      }
+    }
 }
-
 .about-me {
-  p {
-    padding-top: 5px;
-    text-align: justify;
-  }
-
-
+    margin-bottom: 20px;
+    p {
+        padding-top: 5px;
+        text-align: justify;
+    }
 }
 .name {
-  font-size: 28px;
-  text-align: center;
-  text-transform: uppercase;
-  background-color: #FFF3A7;
-  margin: 0;
+    font-size: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #FFF3A7;
+    margin: 0;
+
+
 }
