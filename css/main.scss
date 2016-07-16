@@ -2,6 +2,8 @@ p {
     margin-bottom: 0;
 }
 
+body {
+}
 h1,
 h2,
 h4,
@@ -20,8 +22,22 @@ a {
     }
 }
 .l-nav {
-    height: 22px;
+    min-height: 22px;
+    display: flex;
+    @media screen and (max-width: 500px) {
+        flex-direction: column;
+        li {
+          margin: 0;
+          align-items: center;
+        }
+    }
     ul {
+        @media screen and (max-width: 500px) {
+            flex-direction: column;
+            li {
+              margin: 0;
+            }
+        }
         list-style: none;
         li {
             margin-right: 12px;
@@ -46,25 +62,9 @@ a {
     h5 {
         border-bottom: 1px solid #999;
     }
-
     .main-wrapper {
-      display: flex;
+        display: flex;
 
-      .left {
-        order: 1;
-
-        @media screen and (max-width: 500px) {
-          order: 2;
-        }
-      }
-
-      .right {
-        order: 2;
-
-        @media screen and  (max-width: 500px) {
-          order: 1;
-        }
-      }
     }
 }
 .about-me {
@@ -81,5 +81,20 @@ a {
     background-color: #FFF3A7;
     margin: 0;
 
+    @media screen and  (max-width: 768px) {
+      font-size: 18px;
+    }
+}
 
+.left {
+    order: 1;
+    @media screen and (max-width: 500px) {
+        order: 2;
+    }
+}
+.right {
+    order: 2;
+    @media screen and (max-width: 500px) {
+        order: 1;
+    }
 }
